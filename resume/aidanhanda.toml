@@ -1,0 +1,173 @@
+# The [META] section contains general variables that specific resume
+#   formatters use to assemble your resume. The default formatter that
+#   compiles a TEX document takes in the following parameters:
+#   - [margin-left]     How much space to leave on the left side of the document
+#   - [margin-right]    How much space to leave on the right side of the document
+#   - [margin-top]      How much space to leave on the top of the document
+#   - [margin-bottom]   How much space to leave on the bottom of the document
+#   - [order]           A list of sections that defines what order they should
+#                           appear on your resume
+[META]
+margin-left = "0.3in"
+margin-right = "0.3in"
+margin-top = "0.3in"
+margin-bottom = "0.1in"
+order = [
+  "Education",
+  "Professional Experience",
+  "Projects",
+  "Leadership Experience",
+  "Skills And Achievements"
+]
+
+# The ABOUT section defines general information about who you are
+#   which is by default included in the header of your resume.
+[ABOUT]
+name =      "Aidan Handa"
+address =   "----- REDACTED -----"
+email =     "----- REDACTED -----"
+phone =     "----- REDACTED -----"
+
+# >>>>> Education >>>>>
+
+# For some sections we will define specific metadata so that we know
+#   how to render the sections
+[META.Education]
+# This notifies our formatter that the [Education] section should be rendered
+#   specially as conveying education data
+type = "education"
+
+[[Education]]
+univeristy =    "Georgia Insitute of Technology"
+college =       "College of Computing"
+degree =        "Master of Science in Computer Science"
+graduation =    "December 2022"
+gpa =           "4.00"
+distinctions =  "BS / MS Accelerated Program"
+
+[[Education]]
+univeristy =    "Georgia Insitute of Technology"
+college =       "College of Computing"
+degree =        "Bachelor of Science in Computer Science"
+graduation =    "December 2021"
+gpa =           "3.96"
+distinctions =  "Faculty Honors, Dean's List"
+# <<<<< Education <<<<<
+
+# >>>>> Professional Experience >>>>>
+[["Professional Experience"]]
+title = "Two Sigma Investments"
+location = "New York City, NY"
+description = "Software Engineering Intern"
+date = "June 2021 - August 2021"
+content = [
+  "Created a fault tolerant API for extracting metric data from performance sensitive trading processes using Python and Java",
+  "Rebuilt components of Prometheus eliminating created garbage such that saving metric data occurred in constant time and space",
+  "Interfaced with several core trading teams to collect design input and constraints enabling self-directed iteration and improvements",
+  "Produced a solution that improved observability and runs co-located with exchanges reliably recording metrics in nanoseconds"
+]
+
+[["Professional Experience"]]
+title = "Georgia Tech Research Institute"
+location = "Atlanta, GA"
+description = "Student Assistant"
+date = "September 2020 - May 2021"
+content = [
+  "Researched modern ways to categorize and compare real world network data in an efficient matter",
+  "Prototyped potential methods of generating novel network data in the form of packet captures for use as research data",
+  "Designed a generative adversarial network (GAN) to produce network flows as input to protocol variational autoencoders"
+]
+
+
+[["Professional Experience"]]
+title = "DreamHire.io"
+location = "Remote - San Francisco, CA"
+description = "Software Engineering Intern"
+date = "September 2018 - August 2019"
+content = [
+  "Created a modular PDF annotation engine supporting highlighting, drawing, redaction, etc., using Typescript",
+  "Engineered an efficient matching algorithm in C# to pair recruiters and candidates based on interests based upon cosine similarity",
+  "Developed fluent easy to use user interfaces for the login and onboarding process using HTML/CSS/Javascript",
+]
+# <<<<< Professional Experience <<<<<
+
+# >>>>> Projects >>>>>
+[[Projects]]
+title = "Resme"
+description = "A custom format and cloud compiler designed to easily version and edit generic resume content"
+location = "Atlanta, GA"
+date = "August 2021"
+content = [
+  "Specified a standard format for content such that complex data could be conditionally modeled and exported to a variety of targets",
+  "Implemented the core resume compiler as a multi-threaded process in Rust optimizing for speed and compute cycles",
+  "Containerized critical components of the application for orchestrated deployment to an internal Kubernetes cluster",
+  "Connected components with real-time update capability and fault tolerance by using Apache Kafka as a message bus"
+]
+
+[[Projects]]
+title = "Xplicate"
+description = "A data backed AI agent designed to summarize complex medical research papers"
+location = "Naperville, IL"
+date = "May 2020"
+content = [
+  "Experimented with machine learning and algorithmic language representations including tf-idf and word2vec",
+  "Built in Python and Node.js using serverless architecture deployed through Google Cloud Functions",
+  "Utilized various APIs including Google Cloud ML, Google Cloud NLP, and the Wikipedia Python API",
+  # "Delivered a working viable product under a strict 24 hour time constraint including simple test coverage"
+]
+
+[[Projects]]
+title = "Lilac"
+description = "An artificially intelligent personal shopper built over a span of 36 hours at HackGT"
+location = "Atlanta, GA"
+date = "November 2019"
+content = [
+  "Architected core project functionalities, specifications, and system design while negotiating use cases with team members",
+  "Developed a concurrent scraping utility for dynamically rendered websites in Python using Scrapy and NLTK",
+  "Deployed serverless code on Google Cloud infrastructure to populate data for an agent powered by Google Dialogflow",
+]
+# <<<<< Projects <<<<<
+
+# >>>>> Leadership Experience >>>>>
+[["Leadership Experience"]]
+title = "Hangr"
+description = "Co-founder"
+location = "Atlanta, GA"
+date = "January 2021 - May 2021"
+content = [
+  "Directed a team of 6 multidisciplinary Georgia Tech undergraduates in modeling and investigating a unique problem in the world",
+  "Researched and deployed a supervised machine learning model capable of classifying and predicting clothing type using PyTorch",
+  "Generated a mobile application for iOS and Android capable of performing edge ML inference using Flutter and AWS",
+  "Spearheaded development of an embedded device on custom designed hangers to interface with Hangr servers in C++"
+]
+
+[["Leadership Experience"]]
+title = "App-I-Tite"
+description = "Lead Software Engineer"
+location = "Naperville, IL"
+date = "January 2018 - May 2018"
+content = [
+  "Led a team of 4 software development students in iOS development using Agile methodologies",
+  "Constructed and maintained critical features using Swift and MongoDB for data storage"
+]
+# <<<<< Leadership Experience <<<<<
+
+# >>>>> Skills and Achievements >>>>>
+[META."Skills and Achievements"]
+type = "one-line-section"
+
+[["Skills And Achievements"]]
+title = "Programming"
+type = "full"
+content = "Python, Java, Scala, Javascript / Typescript, C, Rust, Go, Elixr, OCaml"
+
+[["Skills And Achievements"]]
+title = "Technologies"
+type = "full"
+content = "AWS, GCP, Kubernetes, Docker, Prometheus, Elasticsearch, Pandas, Numpy, PyTorch, Protobuf"
+
+[["Skills And Achievements"]]
+title = "Coursework"
+type = "full"
+content = "Machine Learning, Data Structures & Algorithms, Object-Oriented Design, Computer Architecture"
+# <<<<< Skills and Achievements <<<<<

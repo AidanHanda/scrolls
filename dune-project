@@ -2,10 +2,6 @@
 
 (name scrolls)
 
-
-
-
-
 (license ISC)
 
 (authors
@@ -22,6 +18,9 @@
  (description "Content reigns supreme!")
  (depends
   (ocaml (>= 4.08.0))
-  dune
+   dune
+   core
+   base
+   ppx_jane
   (odoc :with-doc)))
 (using menhir 2.0)

@@ -24,3 +24,4 @@
   (ocaml (>= 4.08.0))
   dune
   (odoc :with-doc)))
+(using menhir 2.0)

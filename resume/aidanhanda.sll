@@ -1,25 +1,25 @@
-~~~
-Aidan Handa
-123 Road St. Chicago IL
-email.address@site.com
-123-421-9110
-~~~
+~
+: Aidan Handa was here
+: 123 Road St. Chicago IL
+: email.address@site.com
+: 123-421-9110
+~
 
-*+ Education
+> Education
   : Georgia Institute of Technology
   : College of Computing
   : Master of Science in Computer Science
   : December 2022
   : 4.00
   : BS/MS Accelerated Program
-  ---
+  =
   : Georgia Institute of Technology
   : College of Computing
   : Bachelor of Science in Computer Science
   : December 2021
   : 3.96
   : Faculty Honors, Dean's List
-  ---
+  =
 
 * Professional Experience
   : Two Sigma Investments
@@ -34,7 +34,7 @@ email.address@site.com
     and constraints enabling self-directed iteration and improvements
   - Produced a solution that improved observability and runs co-located
     with exchanges reliably recording metrics in nanoseconds
-  ---
+  =
   : Georgia Tech Research Institute
   : Student Assistant
   : September 2020 - May 2021
@@ -45,7 +45,7 @@ email.address@site.com
     form of packet captures for use as research data
   - Designed a generative adversarial network (GAN) to produce network
     flows as input to protocol variational autoencoders
-  ---
+  =
 
 * Projects
   : Resme
@@ -61,7 +61,7 @@ email.address@site.com
     to an internal Kubernetes cluster
   - Connected components with real-time update capability and fault tolerance by using
     Apache Kafka as a message bus
-  ---
+  =
   : Xplicate
   : A data backed AI agent designed to summarize complex medical research papers
   : May 2020
@@ -72,7 +72,7 @@ email.address@site.com
     Cloud Functions
   - Utilized various APIs including Google Cloud ML, Google Cloud NLP, and the Wikipedia
     Python API
-  ---
+  =
   : Lilac
   : An artificially intelligent personal shopper built over a span
     of 36 hours at HackGT
@@ -84,4 +84,4 @@ email.address@site.com
     Python using Scrapy and NLTK
   - Deployed serverless code on Google Cloud infrastructure to populate data for
     an agent powered by Google Dialogflow
-  ---
+  =

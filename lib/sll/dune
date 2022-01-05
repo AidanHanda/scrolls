@@ -8,4 +8,5 @@
 (library
  (name sll)
  (libraries base core str)
+ (inline_tests)
  (preprocess (pps ppx_jane)))

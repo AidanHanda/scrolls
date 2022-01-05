@@ -25,7 +25,7 @@ resume:
 
 
 header:
-  | HEADER_SEP c = header_content { Resume_ast.Header (Resume_ast.Resume_header.make c) }
+  | HEADER_SEP c = header_content { Resume_ast.Header (Resume_header.make c) }
 
 header_content:
   | HEADER_SEP { [] }
@@ -34,24 +34,24 @@ header_content:
 section:
   | n = TITLE cs = content_section
     { Resume_ast.Content_section
-        (Resume_ast.Resume_content_section.add_name
-           (Resume_ast.Resume_content_section.commit cs) n
+        (Resume_content_section.add_name
+           (Resume_content_section.commit cs) n
          )
     }
   | n = EDUCATION es = education_section
     { Resume_ast.Education_section
-        (Resume_ast.Resume_education_section.add_name
-           (Resume_ast.Resume_education_section.commit es) n
+        (Resume_education_section.add_name
+           (Resume_education_section.commit es) n
         )
     }
 
 content_section:
-  | c = CONTENT cs = content_section { Resume_ast.Resume_content_section.add_content cs c }
-  | b = BULLET cs = content_section { Resume_ast.Resume_content_section.add_bullet cs b }
-  | CONTENT_SEP cs = content_section { Resume_ast.Resume_content_section.commit cs }
-  | CONTENT_SEP { Resume_ast.Resume_content_section.empty () }
+  | c = CONTENT cs = content_section { Resume_content_section.add_content cs c }
+  | b = BULLET cs = content_section { Resume_content_section.add_bullet cs b }
+  | CONTENT_SEP cs = content_section { Resume_content_section.commit cs }
+  | CONTENT_SEP { Resume_content_section.empty () }
 
 education_section:
-  | c = CONTENT es = education_section { Resume_ast.Resume_education_section.add_content es c }
-  | CONTENT_SEP es = education_section { Resume_ast.Resume_education_section.commit es }
-  | CONTENT_SEP { Resume_ast.Resume_education_section.empty () }
+  | c = CONTENT es = education_section { Resume_education_section.add_content es c }
+  | CONTENT_SEP es = education_section { Resume_education_section.commit es }
+  | CONTENT_SEP { Resume_education_section.empty () }

@@ -1,7 +1,6 @@
 (menhir
-  (modules parser)
-  (flags -la 2)
-)
+ (modules parser)
+ (flags -la 2))
 
 (ocamllex lexer)
 
@@ -9,4 +8,5 @@
  (name sll)
  (libraries base core str)
  (inline_tests)
- (preprocess (pps ppx_jane)))
+ (preprocess
+  (pps ppx_jane)))

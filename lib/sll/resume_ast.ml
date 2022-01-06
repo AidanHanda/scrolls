@@ -13,5 +13,6 @@ let rec show ts =
   | [] -> ()
   | [ one ] -> out one
   | s :: rest ->
-      out s;
-      show rest
+    out s;
+    show rest
+;;

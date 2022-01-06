@@ -22,5 +22,6 @@
    core
    base
    ppx_jane
+   menhir
   (odoc :with-doc)))
 (using menhir 2.0)

@@ -1,0 +1,87 @@
+~
+: Aidan Handa was here
+: 123 Road St. Chicago IL
+: email.address@site.com
+: 123-421-9110
+~
+
+> Education
+  : Georgia Institute of Technology
+  : College of Computing
+  : Master of Science in Computer Science
+  : December 2022
+  : 4.00
+  : BS/MS Accelerated Program
+  =
+  : Georgia Institute of Technology
+  : College of Computing
+  : Bachelor of Science in Computer Science
+  : December 2021
+  : 3.96
+  : Faculty Honors, Dean's List
+  =
+
+* Professional Experience
+  : Two Sigma Investments
+  : Software Engineering Intern
+  : June 2021 - August 2021
+  : New York City, NY
+  - Created a fault tolerant API for extracting metric data from
+    performance sensitive trading processes using Python and Java
+  - Rebuilt components of Prometheus eliminating created garbage such
+    that saving metric data occurred in constant time and space
+  - Interfaced with several core trading teams to collect design input
+    and constraints enabling self-directed iteration and improvements
+  - Produced a solution that improved observability and runs co-located
+    with exchanges reliably recording metrics in nanoseconds
+  =
+  : Georgia Tech Research Institute
+  : Student Assistant
+  : September 2020 - May 2021
+  : Atlanta, GA
+  - Researched modern ways to categorize and compare real world network
+    data in an efficient matter
+  - Prototyped potential methods of generating novel network data in the
+    form of packet captures for use as research data
+  - Designed a generative adversarial network (GAN) to produce network
+    flows as input to protocol variational autoencoders
+  =
+
+* Projects
+  : Resme
+  : A custom format and cloud compiler designed to easily version and
+    edit generic resume content
+  : August 2021
+  : Atlanta, GA
+  - Specified a standard format for content such that complex data could
+    be conditionally modeled and exported to a variety of targets
+  - Implemented the core resume compiler as a multi-threaded process in Rust
+    optimizing for speed and compute cycles
+  - Containerized critical components of the application for orchestrated deployment
+    to an internal Kubernetes cluster
+  - Connected components with real-time update capability and fault tolerance by using
+    Apache Kafka as a message bus
+  =
+  : Xplicate
+  : A data backed AI agent designed to summarize complex medical research papers
+  : May 2020
+  : Naperville, IL
+  - Experimented with machine learning and algorithmic language representations
+    including tf-idf and word2vec
+  - Built in Python and Node.js using serverless architecture deployed through Google
+    Cloud Functions
+  - Utilized various APIs including Google Cloud ML, Google Cloud NLP, and the Wikipedia
+    Python API
+  =
+  : Lilac
+  : An artificially intelligent personal shopper built over a span
+    of 36 hours at HackGT
+  : November 2019
+  : Atlanta, GA
+  - Architected core project functionalities, specifications, and system design
+    while negotiating use cases with team members
+  - Developed a concurrent scraping utility for dynamically rendered websites in
+    Python using Scrapy and NLTK
+  - Deployed serverless code on Google Cloud infrastructure to populate data for
+    an agent powered by Google Dialogflow
+  =

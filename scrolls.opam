@@ -8,6 +8,10 @@ license: "ISC"
 depends: [
   "ocaml" {>= "4.08.0"}
   "dune"
+  "core"
+  "base"
+  "ppx_jane"
+  "menhir"
   "odoc" {with-doc}
 ]
 build: [

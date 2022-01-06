@@ -1,0 +1,12 @@
+(menhir
+ (modules parser)
+ (flags -la 2))
+
+(ocamllex lexer)
+
+(library
+ (name sll)
+ (libraries base core str)
+ (inline_tests)
+ (preprocess
+  (pps ppx_jane)))

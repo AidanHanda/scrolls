@@ -26,9 +26,17 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v2
-
+        
+      - name: Use OCaml on Windows
+        uses: ocaml/setup-ocaml@v2
+        if: runner.os == 'Windows'
+        with:
+          opam-repositories: |
+            default: https://github.com/fdopen/opam-repository-mingw.git#opam2
+            
       - name: Use OCaml ${{ matrix.ocaml-compiler }}
         uses: ocaml/setup-ocaml@v2
+        if: runner.os != 'Windows'
         with:
           ocaml-compiler: ${{ matrix.ocaml-compiler }}
           dune-cache: ${{ matrix.os != 'macos-latest' }}
